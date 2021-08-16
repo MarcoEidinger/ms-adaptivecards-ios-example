@@ -1,0 +1,16 @@
+PODS:
+  - AdaptiveCards (2.7.0)
+
+DEPENDENCIES:
+  - AdaptiveCards
+
+SPEC REPOS:
+  trunk:
+    - AdaptiveCards
+
+SPEC CHECKSUMS:
+  AdaptiveCards: 4d5188c92ff8f8655dfb2b1be5cbfb36100ebd12
+
+PODFILE CHECKSUM: d58ab473e332c052ba0ba239ad213e30c5cda5c2
+
+COCOAPODS: 1.10.1

@@ -11,15 +11,19 @@
 		8A3D589C26CAEC66005FA626 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D589B26CAEC66005FA626 /* ContentView.swift */; };
 		8A3D589E26CAEC69005FA626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3D589D26CAEC69005FA626 /* Assets.xcassets */; };
 		8A3D58A126CAEC69005FA626 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3D58A026CAEC69005FA626 /* Preview Assets.xcassets */; };
+		C1897229994917C3A463761A /* Pods_MSAdaptiveCardExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601F4CA056DCC75801D83EDD /* Pods_MSAdaptiveCardExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05FB525BCA15D2D4C34A560C /* Pods-MSAdaptiveCardExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSAdaptiveCardExample.debug.xcconfig"; path = "Target Support Files/Pods-MSAdaptiveCardExample/Pods-MSAdaptiveCardExample.debug.xcconfig"; sourceTree = "<group>"; };
+		601F4CA056DCC75801D83EDD /* Pods_MSAdaptiveCardExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSAdaptiveCardExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A3D589626CAEC66005FA626 /* MSAdaptiveCardExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSAdaptiveCardExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A3D589926CAEC66005FA626 /* MSAdaptiveCardExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSAdaptiveCardExampleApp.swift; sourceTree = "<group>"; };
 		8A3D589B26CAEC66005FA626 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8A3D589D26CAEC69005FA626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A3D58A026CAEC69005FA626 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A3D58A226CAEC69005FA626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB4F2CB3A28F5AB4AC7D27FC /* Pods-MSAdaptiveCardExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSAdaptiveCardExample.release.xcconfig"; path = "Target Support Files/Pods-MSAdaptiveCardExample/Pods-MSAdaptiveCardExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1897229994917C3A463761A /* Pods_MSAdaptiveCardExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13E36C1235F1BFA7F906D29C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05FB525BCA15D2D4C34A560C /* Pods-MSAdaptiveCardExample.debug.xcconfig */,
+				DB4F2CB3A28F5AB4AC7D27FC /* Pods-MSAdaptiveCardExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8747F36F4CAE6316CF93AF76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				601F4CA056DCC75801D83EDD /* Pods_MSAdaptiveCardExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A3D588D26CAEC66005FA626 = {
 			isa = PBXGroup;
 			children = (
 				8A3D589826CAEC66005FA626 /* MSAdaptiveCardExample */,
 				8A3D589726CAEC66005FA626 /* Products */,
+				13E36C1235F1BFA7F906D29C /* Pods */,
+				8747F36F4CAE6316CF93AF76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A3D58A526CAEC69005FA626 /* Build configuration list for PBXNativeTarget "MSAdaptiveCardExample" */;
 			buildPhases = (
+				7841880D5AE72EFB46F9F9D7 /* [CP] Check Pods Manifest.lock */,
 				8A3D589226CAEC66005FA626 /* Sources */,
 				8A3D589326CAEC66005FA626 /* Frameworks */,
 				8A3D589426CAEC66005FA626 /* Resources */,
+				B4F6F65FA2C063AC67759455 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7841880D5AE72EFB46F9F9D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MSAdaptiveCardExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4F6F65FA2C063AC67759455 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MSAdaptiveCardExample/Pods-MSAdaptiveCardExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MSAdaptiveCardExample/Pods-MSAdaptiveCardExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MSAdaptiveCardExample/Pods-MSAdaptiveCardExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A3D589226CAEC66005FA626 /* Sources */ = {
@@ -264,6 +333,7 @@
 		};
 		8A3D58A626CAEC69005FA626 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05FB525BCA15D2D4C34A560C /* Pods-MSAdaptiveCardExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -285,6 +355,7 @@
 		};
 		8A3D58A726CAEC69005FA626 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB4F2CB3A28F5AB4AC7D27FC /* Pods-MSAdaptiveCardExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
