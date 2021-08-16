@@ -9,8 +9,13 @@ import Foundation
 import SwiftUI
 
 struct AdaptiveCardView: UIViewControllerRepresentable {
+
+    var cardJson: String
+
     func makeUIViewController(context: Context) -> AdaptiveCardViewController {
-        return AdaptiveCardViewController()
+        let vc = AdaptiveCardViewController()
+        vc.cardJson = cardJson
+        return vc
     }
 
     func updateUIViewController(_ uiViewController: AdaptiveCardViewController, context: Context) {
