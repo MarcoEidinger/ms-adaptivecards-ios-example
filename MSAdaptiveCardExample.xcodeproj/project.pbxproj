@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,7 @@
 		8A3D589D26CAEC69005FA626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A3D58A026CAEC69005FA626 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A3D58A226CAEC69005FA626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A3D58D626CAF35F005FA626 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		DB4F2CB3A28F5AB4AC7D27FC /* Pods-MSAdaptiveCardExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSAdaptiveCardExample.release.xcconfig"; path = "Target Support Files/Pods-MSAdaptiveCardExample/Pods-MSAdaptiveCardExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,7 +45,6 @@
 				05FB525BCA15D2D4C34A560C /* Pods-MSAdaptiveCardExample.debug.xcconfig */,
 				DB4F2CB3A28F5AB4AC7D27FC /* Pods-MSAdaptiveCardExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,6 +77,7 @@
 		8A3D589826CAEC66005FA626 /* MSAdaptiveCardExample */ = {
 			isa = PBXGroup;
 			children = (
+				8A3D58D626CAF35F005FA626 /* BridgingHeader.h */,
 				8A3D589926CAEC66005FA626 /* MSAdaptiveCardExampleApp.swift */,
 				8A3D589B26CAEC66005FA626 /* ContentView.swift */,
 				8A3D589D26CAEC69005FA626 /* Assets.xcassets */,
@@ -348,6 +349,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.MSAdaptiveCardExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MSAdaptiveCardExample/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -370,6 +372,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.MSAdaptiveCardExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MSAdaptiveCardExample/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
