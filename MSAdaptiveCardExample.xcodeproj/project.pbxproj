@@ -11,6 +11,8 @@
 		8A3D589C26CAEC66005FA626 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D589B26CAEC66005FA626 /* ContentView.swift */; };
 		8A3D589E26CAEC69005FA626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3D589D26CAEC69005FA626 /* Assets.xcassets */; };
 		8A3D58A126CAEC69005FA626 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3D58A026CAEC69005FA626 /* Preview Assets.xcassets */; };
+		8A3D58D826CAF416005FA626 /* AdaptiveCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D58D726CAF416005FA626 /* AdaptiveCardViewController.swift */; };
+		8A3D58DA26CAF445005FA626 /* AdaptiveCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D58D926CAF445005FA626 /* AdaptiveCardView.swift */; };
 		C1897229994917C3A463761A /* Pods_MSAdaptiveCardExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601F4CA056DCC75801D83EDD /* Pods_MSAdaptiveCardExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		8A3D58A026CAEC69005FA626 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A3D58A226CAEC69005FA626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A3D58D626CAF35F005FA626 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		8A3D58D726CAF416005FA626 /* AdaptiveCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveCardViewController.swift; sourceTree = "<group>"; };
+		8A3D58D926CAF445005FA626 /* AdaptiveCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveCardView.swift; sourceTree = "<group>"; };
 		DB4F2CB3A28F5AB4AC7D27FC /* Pods-MSAdaptiveCardExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSAdaptiveCardExample.release.xcconfig"; path = "Target Support Files/Pods-MSAdaptiveCardExample/Pods-MSAdaptiveCardExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +87,8 @@
 				8A3D589D26CAEC69005FA626 /* Assets.xcassets */,
 				8A3D58A226CAEC69005FA626 /* Info.plist */,
 				8A3D589F26CAEC69005FA626 /* Preview Content */,
+				8A3D58D726CAF416005FA626 /* AdaptiveCardViewController.swift */,
+				8A3D58D926CAF445005FA626 /* AdaptiveCardView.swift */,
 			);
 			path = MSAdaptiveCardExample;
 			sourceTree = "<group>";
@@ -208,8 +214,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A3D58DA26CAF445005FA626 /* AdaptiveCardView.swift in Sources */,
 				8A3D589C26CAEC66005FA626 /* ContentView.swift in Sources */,
 				8A3D589A26CAEC66005FA626 /* MSAdaptiveCardExampleApp.swift in Sources */,
+				8A3D58D826CAF416005FA626 /* AdaptiveCardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
