@@ -24,11 +24,19 @@ class AdaptiveCardViewController: UIViewController, ACRActionDelegate{
                 let ad = renderResult?.view;
                 ad!.acrActionDelegate = (self as ACRActionDelegate);
                 self.view.autoresizingMask = [.flexibleHeight];
-                self.view.addSubview(ad!);
                 ad!.translatesAutoresizingMaskIntoConstraints = false;
 
-                NSLayoutConstraint(item: ad!, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1.0, constant: 0).isActive = true;
-                NSLayoutConstraint(item: ad!, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1.0, constant: 3).isActive = true;
+                // hack to ensure that images get rendered
+                ad!.waitForAsyncTasksToFinish()
+                for acrSubView in ad!.subviews[0].subviews {
+                    acrSubView.removeFromSuperview()
+                }
+                _ = ad!.render() as? ACRView
+
+                self.view.addSubview(ad!);
+
+                NSLayoutConstraint(item: ad!, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1.0, constant: 0).isActive = true;
+                NSLayoutConstraint(item: ad!, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1.0, constant: 3).isActive = true;
             }
         }
     }
@@ -47,5 +55,4 @@ class AdaptiveCardViewController: UIViewController, ACRActionDelegate{
             self.present(alert, animated: true)
         }
     }
-
 }
